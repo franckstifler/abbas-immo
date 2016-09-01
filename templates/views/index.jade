@@ -1,0 +1,107 @@
+extends ../layouts/default
+
+block content
+	.banner
+		//img(src="/images/bg2.jpg")
+		#banner
+		.talk
+			h2 SCI ABBAS Immobilier
+			div.typed
+	.products
+		.container
+			.row
+				.col-md-4.text-xs-center
+					.banner
+						a(href="#venteLocation"): img.img-rounded(src="/images/cards/bg2.jpg")
+						.talk
+							p ABBAS-IMMOBILIER
+							span VENTE ET LOCATION
+				.col-md-4
+					.banner
+						a(href='#achat'): img.img-rounded(src="/images/cards/bg4.jpg")
+						.talk
+							p ABBAS-IMMOBILIER
+							span ACHAT
+				.col-md-4
+					.banner
+						a(href='#conseil'): img.img-rounded(src="/images/cards/bg6.jpg")
+						.talk
+							p ABBAS-IMMOBILIER
+							span CONSEIL ET SUIVI TECHNIQUE
+						
+	#carousel-example-generic.carousel.slide(data-ride='carousel')
+		ol.carousel-indicators
+			li.active(data-target='#carousel-example-generic', data-slide-to='0')
+			li(data-target='#carousel-example-generic', data-slide-to='1')
+			li(data-target='#carousel-example-generic', data-slide-to='2')
+		.carousel-inner(role='listbox')
+			.carousel-item.active
+				.carousel-caption
+					p.title ACTUALITES
+					p.sub-title Contenu en cours de construction.
+					
+			.carousel-item
+				.carousel-caption
+					p.title ACTUALITES
+					p.sub-title Contenu en cours de construction.
+			.carousel-item
+				.carousel-caption
+					p.title ACTUALITES
+					p.sub-title Contenu en cours de construction.
+	div.seperator
+	.container
+		.row.featurette#venteLocation
+			.col-lg-7
+				h2.featurette-heading Vente et location de biens immobiliers
+				span.text-muted Une experience extraordinaire.
+				p.lead A ABBAS-IMMO, nous vendons les biens immobiliers tels que 
+					| terrains, maisons, immeubles ... Nous avons des locations immobilières à
+					| habitation ou de bureau (plein pied, duplex, espace magasin...). Il vous suffit de demander,
+					| et notre équipe se chargera du reste.
+			.col-lg-5
+				img(src="/images/bg4.jpg")
+		hr.featurette-divider
+		.row.featurette#achat
+			.col-lg-5
+				img(src="/images/bg5.jpg")
+			.col-lg-7
+				h2.featurette-heading Achat des biens immobiliers
+				span.text-muted Venez nous tromper.
+				p.lead A ABBAS-IMMO, nous achetons divers biens immobiliers tels que 
+					| terrains, maisons, immeubles ...
+					| Nous achetons aussi des appartements, maisons ou duplex sur plan.
+		hr.featurette-divider
+		.row.featurette#conseil
+			.col-lg-7
+				h2.featurette-heading Conseil et suivi technique
+				span.text-muted Des services de qualité comme nulle part ailleurs.
+				p.lead A ABBAS-IMMO, nous vous offrons le meilleur choix possible au client, 
+					| et nous vous apportons un suivi technique dans vos projets: architecturaux,
+					| grace à nos géomètres, géotechniciens, ingénieurs... pour vous aider au moindre
+					| cout dans vos réalisations.
+			.col-lg-5
+				img(src="/images/bg7.jpg")
+
+
+
+
+	//.container: .jumbotron
+	//	img(src='/images/logo.svg', width='160')
+	//	h1 Welcome
+	//	p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
+	//	p It includes the latest versions of
+	//		| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+	//		| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+	//	p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
+	//	hr
+	//	if user && user.canAccessKeystone
+	//		p
+	//			a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
+	//	else
+	//		p We have created a default Admin user for you with the email <strong>abbasimmobilier@gmail.com</strong> and the password <strong>password</strong>.
+	//		p
+	//			a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
+	//			|  to use the Admin UI.
+	//	hr
+	//	p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
+	//		| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
