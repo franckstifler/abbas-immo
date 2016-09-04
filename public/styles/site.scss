@@ -20,7 +20,18 @@
 
 // Add your own site style includes here
 @import "site/layout";
+body {
+  padding-top: 54px;
+}
+.navbar-light {
+  background-color: rgba(#E2ECF1, 0.6);
+  color: red;
+}
 
+.navbar-light .navbar-nav .nav-link {
+  color: #16004C;
+  font-weight: 500;
+}
 .banner {
   position: relative;
   #banner {
@@ -39,7 +50,7 @@
   right: 40px;
   font-weight: 700;
 }
-.talk div {
+.talk .typed {
   color: #fff;
   width: 250px;
   position: absolute;
@@ -47,6 +58,7 @@
   right: 50px;
   text-align: left;
   font-weight: 500;
+  margin: 0;
 }
 
 .products {
@@ -126,4 +138,9 @@ hr {
 }
 
 //Media queries
-
+@media (max-width: 480px) {
+  .col-lg-5 img {
+	height: 300px;
+	border-radius: 50px;
+  }
+}

@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var shell = require('gulp-shell');
-var autoprefixer = require('gulp-autoprefixer');
+var clean = require('gulp-clean-css');
 
 var sass = require('gulp-sass');
 
@@ -25,6 +25,8 @@ gulp.task('watch:sass', function () {
 gulp.task('sass', function(){
 	gulp.src(paths.style.all)
 		.pipe(sass().on('error', sass.logError))
+		.pipe(clean({
+			compatibility: 'ie8'}))
 		.pipe(gulp.dest(paths.style.output));
 });
 

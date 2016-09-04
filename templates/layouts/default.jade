@@ -41,7 +41,7 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 			
-			nav.navbar.navbar-light.bg-faded.navbar-fixed-top
+			nav.navbar.navbar-light.navbar-fixed-top
 				.container
 					a.navbar-brand(href="/") ABBAS-IMMO
 					ul.nav.navbar-nav
@@ -54,9 +54,9 @@ html
 							if user
 								if user.canAccessKeystone
 									li.nav-item: a.nav-link(href='/keystone') Open Keystone
-								li.nav-item: a.nav-link(href='/keystone/signout') Sign Out
+								li.nav-item: a.nav-link(href='/keystone/signout') Déconnecter
 							else
-								li.nav-item: a.nav-link(href='/keystone/signin') Sign In
+								li.nav-item: a.nav-link(href='/keystone/signin') Se Connecter
 
 		//- BODY
 		#body
@@ -94,13 +94,12 @@ html
 		//- them specifically here, instead of bootstrap-3.3.5.min.js
 		script(src='/js/bootstrap/bootstrap.js')
 		script(src='/js/typed.min.js')
-		script(src='/js/main.js')
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-
+		script(src='/js/main.js')
 		//- Include template-specific javascript files by extending the js block
 		block js

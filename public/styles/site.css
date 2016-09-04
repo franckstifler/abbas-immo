@@ -4903,6 +4903,17 @@ a.text-danger:focus, a.text-danger:hover {
   max-width: 100%;
   height: auto; }
 
+body {
+  padding-top: 54px; }
+
+.navbar-light {
+  background-color: rgba(226, 236, 241, 0.6);
+  color: red; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #16004C;
+  font-weight: 500; }
+
 .banner {
   position: relative; }
   .banner #banner {
@@ -4919,14 +4930,15 @@ a.text-danger:focus, a.text-danger:hover {
   right: 40px;
   font-weight: 700; }
 
-.talk div {
+.talk .typed {
   color: #fff;
   width: 250px;
   position: absolute;
   bottom: 60px;
   right: 50px;
   text-align: left;
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 0; }
 
 .products {
   padding-top: 35px;
@@ -4993,3 +5005,8 @@ hr {
   opacity: 0.9;
   border-radius: 15px 150px;
   padding: 10px 0; }
+
+@media (max-width: 480px) {
+  .col-lg-5 img {
+    height: 300px;
+    border-radius: 50px; } }
