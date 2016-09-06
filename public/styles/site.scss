@@ -73,6 +73,12 @@ body {
   	img {
 	  height: 200px;
 	  max-width: 100%;
+	  transition:  1s;
+	}
+	img:hover{
+	  transform: scale(0.98);
+	  opacity: 0.8;
+	  transition: 1s;
 	}
 	.talk p{
 	  position: absolute;
@@ -129,6 +135,9 @@ hr {
 .featurette {
   margin: 20px 0;
 }
+.col-lg-7 {
+  text-align: center;
+}
 .col-lg-5 img {
   height: 450px;
   width: 100%;
@@ -137,10 +146,32 @@ hr {
   padding: 10px 0;
 }
 
+#footer {
+  background: #2b2d2f;
+  text-align: center;
+  p {
+	color: #fff;
+  }
+  span {
+	font-size: 13px;
+  }
+}
 //Media queries
 @media (max-width: 480px) {
   .col-lg-5 img {
 	height: 300px;
 	border-radius: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-7 {
+	position: relative;
+	top: 120px;
+	.services-left {
+	  text-align: left;
+	}
+	.services-right {
+	  text-align: right;
+	}
   }
 }

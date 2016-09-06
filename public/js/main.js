@@ -2,15 +2,6 @@
  * Created by Tchowa Adonis on 01/09/2016.
  */
 $(document).ready(function(){
-	$('.banner a').hover(function(){
-		$(this).find("img").animate({
-			opacity: '0.5'
-		})
-	}, function(){
-		$(this).find("img").animate({
-			opacity: '1'
-		})
-	});
 	$('.banner a').on('click', function(evt){
 		if(this.hash !== ""){
 			evt.preventDefault();
